@@ -1,0 +1,114 @@
+header{
+    align-items: center;
+    background-color: var(--color-menu);
+    display: flex;
+    flex-direction: column;
+    margin: .55rem;
+}
+
+.cabecera__container{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 8vh;
+    justify-content: space-between;
+    padding-top: .85rem;
+    padding-bottom: .85rem;
+    width: 85%;
+}
+
+.cabecera__logo{
+    width: 9.3rem;
+}
+
+.cabecera__busqueda{
+    align-items: center;
+    background: var(--color-body);
+    border-radius: 1.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding: .5rem .8rem;
+}
+
+.cabecera__input{
+    background-color: transparent;
+    border: none;
+    width: 20rem;
+}
+
+.cabecera__lupa, .cabecera__lupa--login{
+    background: var(--color-body);
+    border: none;
+    opacity: 50;
+}
+
+.cabecera__input:focus, .cabecera__lupa:focus, .cabecera__lupa--login{
+    outline: none;
+}
+
+.cabecera__lupa--login{
+    display: none;
+}
+
+.login{
+    background-color: var(--color-menu);
+    border: 2px solid var(--color-boton);
+    border-radius: .35rem;
+    color: var(--color-boton);
+    font-size: 16px;
+    height: 2.5rem;
+    width: 9rem;
+}
+
+
+
+@media screen and (min-width: 320px){
+    .cabecera__logo{
+        width: 6.3rem;
+    }
+
+    .login{
+        font-size: 14px;
+        height: 2.3rem;
+        width: 6.5rem;
+    }
+
+    .cabecera__busqueda{
+        display: none;
+    }
+
+    .cabecera__lupa--login{
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .cabecera__logo{
+        width: 9.3rem;
+    }    
+
+    .login{
+        font-size: 16px;
+        height: 2.5rem;
+        width: 9rem;
+    }
+
+    .cabecera__busqueda{
+        display: flex;
+    }
+
+    .cabecera__input{
+        width: 12rem;
+    }
+
+    .cabecera__lupa--login{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecera__input{
+        width: 20rem;
+    }
+}

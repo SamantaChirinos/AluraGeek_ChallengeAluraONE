@@ -1,0 +1,20 @@
+:root{
+    --color-body: #F5F5FE;
+    --color-menu: #FFFFFF;
+    --color-barra: #A2A2A2;
+    --color-boton: #2A7AE4;
+    --color-formulario: #EAF2FD;
+    --raleway: 'Raleway', sans-serif;
+}
+
+*{
+    font-family: var(--raleway);
+    font-weight: 400;
+}
+
+body{
+    background: var(--color-body);
+    box-sizing: border-box;
+    font-family: var(--raleway);
+    font-weight: 700;
+}

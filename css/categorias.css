@@ -1,0 +1,158 @@
+:root{
+    --cardWidth: 10rem;
+    --cardHeight: 15.1rem;
+    --color-titulo: #464646;
+}
+
+.categorias{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.categoria{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 3.7rem;
+    width: 100%;
+}
+
+.categoria__info{
+    border-bottom: 1px solid var(--color-barra);    
+    display: flex;
+    flex-direction: row;
+    font-weight: 700;
+    height: 2.37rem;
+    justify-content: space-between;
+    margin-bottom: .75rem;
+    width: 85%;
+}
+
+.categoria__titulo{
+    color: var(--color-titulo);
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.categoria__link{
+    color: var(--color-boton);
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: .85rem;
+    text-decoration: none;
+}
+
+.categoria__flecha{
+    height: 16px;
+    margin-left: .5rem;
+    width: 16px;
+}
+
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 85%;
+}
+
+.card{
+    box-sizing: border-box;
+    height: var(--cardHeight);
+    width: var(--cardWidth);
+    padding-bottom: .3rem;
+}
+
+.card:hover{
+    border-radius: .35rem;
+    box-shadow: 0 0 15px #131314;
+    transform: scale(1.025);
+}
+
+.card__imagen{
+    display: flex;
+    height: 10rem;
+    width: 10rem;
+}
+
+.card__info{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: .5rem;
+    text-align: left;
+}
+
+.card__titulo{
+    color: var(--color-titulo);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.card__precio{
+    color: var(--color-titulo);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+}
+
+.card__link{
+    color: var(--color-boton);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    text-decoration: none;
+}
+
+
+
+
+@media screen and (min-width: 320px){
+    .card:nth-child(5), .card:nth-child(6){
+        display: none;
+    }
+
+    .card{
+        width: 8.7rem;
+    }
+    
+    .card__imagen{
+        width: 8.7rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .card:nth-child(5), .card:nth-child(6){
+        display: none;
+    }
+
+    .card{
+        width: 9rem;
+    }
+    
+    .card__imagen{
+        width: 9rem;
+    }    
+}
+
+@media screen and (min-width: 1024px) {
+    .card:nth-child(5), .card:nth-child(6){
+        display: unset;
+    }
+
+    .card{
+        width: var(--cardWidth);
+    }
+    
+    .card__imagen{
+        width: 10rem;
+    } 
+}
+
+
+
+
+
+

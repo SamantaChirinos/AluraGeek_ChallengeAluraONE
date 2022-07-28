@@ -1,0 +1,140 @@
+footer{
+    background: var(--color-formulario);
+}
+
+.footer__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: auto;
+    padding: 2rem 0;
+    width: 85%;
+}
+
+.footer__logo{
+    height: 3.5rem;
+}
+
+.footer__lista{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: .7rem;
+}
+
+.footer__lista--item, a{
+    color: var(--color-titulo);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    text-decoration: none;
+}
+
+.footer__formulario--container{
+    width: 50%;
+}
+
+.footer__formulario--titulo{
+    color: var(--color-titulo);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    margin-bottom: .6rem;
+}
+
+.footer__formulario{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.footer__formulario--label{
+    background-color: var(--color-menu);
+    border-radius: .5rem;
+    color: var(--color-barra);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-bottom: 1rem;
+    padding: .5rem;
+}
+
+.footer__formulario--input{
+    background-color: transparent;
+    border: none;
+    resize: none;
+    width: 100%;
+}
+
+.footer__formulario--boton{
+    background-color: var(--color-boton);
+    border: none;
+    border-radius: .35rem;
+    color: var(--color-menu);
+    font-size: 16px;
+    font-weight: 400;
+    height: 2.5rem;
+    line-height: 19px;
+    width: 9rem;
+}
+
+.footer__formulario--input:focus, .footer__formulario--boton{
+    outline: none;
+}
+
+.footer__derechos{
+    background: var(--color-menu);
+    display: flex;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.footer__derechos--nombre{
+    color: var(--color-titulo);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    text-decoration: none;
+}
+
+
+
+@media screen and (min-width: 320px){    
+    .footer__container{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer__formulario--container{
+        width: 85%
+    }
+
+    .footer__formulario--titulo, .footer__lista{
+        text-align: center;
+        padding-top: 2rem;
+    }
+
+    .footer__derechos--nombre{
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
+
+@media screen and (min-width: 768px){}
+
+@media screen and (min-width: 1024px) {
+    .footer__container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+    .footer__derechos--nombre{
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
