@@ -31,10 +31,6 @@ footer{
     text-decoration: none;
 }
 
-.footer__formulario--container{
-    width: 50%;
-}
-
 .footer__formulario--titulo{
     color: var(--color-titulo);
     font-size: 16px;
@@ -123,14 +119,47 @@ footer{
     }
 }
 
-@media screen and (min-width: 768px){}
+@media screen and (min-width: 768px){
+    .footer__container{
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 17rem;
+    }
+
+    .footer__formulario--container{
+        width: 50%
+    }
+
+    .footer__formulario--titulo{
+        text-align: left;
+    }
+
+    .footer__lista, .footer__logo{
+        text-align: left;
+        margin-right: 3rem;
+    }
+
+    .footer__derechos--nombre{
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
 
 @media screen and (min-width: 1024px) {
     .footer__container{
         flex-direction: row;
+        flex-wrap: nowrap;
+        height: auto;
         justify-content: space-between;
     }
 
+    .footer__formulario--titulo, .footer__lista{
+        padding-top: 0;
+    }
+
+    .footer__lista, .footer__logo{
+        margin-right: 0;
+    }
 
     .footer__derechos--nombre{
         font-size: 16px;

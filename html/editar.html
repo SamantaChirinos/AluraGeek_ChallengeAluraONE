@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AluraGeek</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/body.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/login.css">
+        <link rel="stylesheet" href="../css/editar.css">
+        <link rel="stylesheet" href="../css/footer.css">
+    </head>
+
+    <body>
+        <header class="cabecera">
+            <section class="cabecera__container">
+                <img class="cabecera__logo" src="../img/logo.svg" alt="Logo AluraGeek">
+                <div class="cabecera__busqueda">
+                    <form action=""></form>
+                    <input class="cabecera__input" type="search" placeholder="¿Qué deseas buscar?">
+                    <button class="cabecera__lupa"><img src="../img/lupa.svg" alt="Ícono de lupa"></button>
+                </div>
+                <a href="../index.html"><button class="login">Regresar</button></a>
+                <button class="cabecera__lupa--login"><img src="../img/lupa2.svg" alt="Ícono de lupa"></button>
+            </section>
+        </header>
+        <main>
+            <section class="editar__formulario--container">
+                <h3 class="editar__formulario--titulo">Agregar nuevo producto</h3>
+                <form class="editar__formulario" action="#">
+                    <label class="footer__formulario--label" for="nombre">
+                        <span class="footer__formulario--nombre">URL de imagen</span>
+                        <input class="footer__formulario--input" type="text" name="nombre" autocomplete="off">
+                    </label>
+                    <label class="footer__formulario--label" for="nombre">
+                        <span class="footer__formulario--nombre">Categoría</span>
+                        <input class="footer__formulario--input" type="text" name="nombre" autocomplete="off">
+                    </label>
+                    <label class="footer__formulario--label" for="nombre">
+                        <span class="footer__formulario--nombre">Nombre del producto</span>
+                        <input class="footer__formulario--input" type="text" name="nombre" autocomplete="off">
+                    </label>
+                    <label class="footer__formulario--label" for="nombre">
+                        <span class="footer__formulario--nombre">Precio del produtco</span>
+                        <input class="footer__formulario--input" type="text" name="nombre" autocomplete="off">
+                    </label>
+                    <label class="footer__formulario--label" for="nombre">
+                        <span class="footer__formulario--nombre">Descripción del producto</span>
+                        <input class="footer__formulario--input" type="text" name="nombre" autocomplete="off">
+                    </label>
+                    <button class="footer__formulario--boton">Agregar producto</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <div class="footer__container">
+                <img class="footer__logo" src="../img/logo.svg" alt="Logo AluraGeek">
+                <ul class="footer__lista">
+                    <li class="footer__lista--item"><a href="#">Quiénes somos</a></li>
+                    <li class="footer__lista--item"><a href="#">Política de privacidad</a></li>
+                    <li class="footer__lista--item"><a href="#">Programa de fidelidad</a></li>
+                    <li class="footer__lista--item"><a href="#">Nuestras Tiendas</a></li>
+                    <li class="footer__lista--item"><a href="#">Quiero ser franquiciado</a></li>
+                    <li class="footer__lista--item"><a href="#">Anúncie aquí</a></li>
+                </ul>
+                <div class="footer__formulario--container">
+                    <h3 class="footer__formulario--titulo">Hable con nosotros</h3>
+                    <form class="footer__formulario" action="#">
+                        <label class="footer__formulario--label" for="nombre">
+                            <span class="footer__formulario--nombre">Nombre:</span>
+                            <input class="footer__formulario--input" type="text" name="nombre" autocomplete="off">
+                        </label>
+                        <label class="footer__formulario--label" for="mensaje">
+                            <span class="footer__formulario--nombre">Mensaje:</span>
+                            <textarea class="footer__formulario--input" type="text" name="mensaje"></textarea>
+                        </label>
+                        <button class="footer__formulario--boton">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__derechos">
+                <a class="footer__derechos--nombre" href="#">Desarrollado por Samanta Chirinos 2022</a>
+            </div>
+        </footer>
+        <!--<script src="../js/login.js"></script>-->
+    </body>
+</html>

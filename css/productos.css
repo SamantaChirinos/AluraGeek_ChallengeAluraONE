@@ -1,0 +1,37 @@
+.producto__container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4.7rem;
+    margin-bottom: 4.7rem;
+    width: 100%;
+}
+
+.productos__cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    width: 85%;
+}
+
+.producto__info{
+    height: 4rem;
+}
+
+.producto__boton{
+    background-color: var(--color-boton);
+    border: none;
+    border-radius: .35rem;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    height: 3rem;
+    line-height: 19px;
+    width: 11rem;
+}
+
+
+

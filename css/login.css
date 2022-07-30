@@ -1,0 +1,70 @@
+.login__formulario--container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 6rem 0;
+    width: 85%;
+}
+
+.login__formulario--titulo{
+    color: var(--color-titulo);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    margin-bottom: .6rem;
+}
+
+.login__formulario{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.login__formulario--label{
+    background-color: var(--color-menu);
+    border-radius: .5rem;
+    margin: 1rem;
+}
+
+.login__formulario--input{
+    background-color: var(--color-menu);
+    border: none;
+    color: var(--color-barra);
+    font-size: 16px;
+    font-weight: 400;
+    height: 3rem;
+    line-height: 20px;
+    padding-left: 1rem;
+    resize: none;
+    width: 20rem;
+}
+
+.login__formulario--input::placeholder{
+    color: var(--color-barra);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-left: .6rem;
+}
+
+.login__formulario--boton{
+    background-color: var(--color-boton);
+    border: none;
+    border-radius: .35rem;
+    color: var(--color-menu);
+    font-size: 18px;
+    font-weight: 600;
+    height: 3rem;
+    line-height: 21px;
+    margin: 1rem;
+    width: 21rem;
+}
+
+.login__formulario--input:focus, .login__formulario--boton{
+    outline: none;
+}
+
+
+

@@ -43,7 +43,7 @@ header{
     opacity: 50;
 }
 
-.cabecera__input:focus, .cabecera__lupa:focus, .cabecera__lupa--login{
+.cabecera__input:focus, .cabecera__lupa:focus, .cabecera__lupa--login, .card__borrar, .card__editar{
     outline: none;
 }
 
